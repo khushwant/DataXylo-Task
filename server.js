@@ -22,8 +22,6 @@ var storage =   multer.diskStorage(
                 })
 
 var upload = multer({ storage: storage })
-        
-    app.use(express.static('public'));
     app.use(bodyParser.urlencoded({ extended: false }));
         //app.use(multer({ dest: '/tmp/'}).single('file'));
     app.get('/feature1.htm',function(req,res){
